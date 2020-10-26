@@ -1,0 +1,24 @@
+Notes about uploading of the photo cus I am in design hell. Only have been working on this project for years
+
+Gulping Data:
+    Well since I am foolish and congress (My wife) only approves limited funding I am using pi 4 4GBs as my server so I need to think about performance
+    Plus thinking about performance isn't a terrible thing to do.
+    - Fact pictures are large in data
+    1) gulp in all of the data (readall then close the body) and pass an array around - going to do this as feels best (please forgive me)
+        Pros: 
+            - Well we rapidly pass everything into ram and can process it in parallel in other areas of code
+            - Strips data from client as fast as possible
+            - Allows peeking for the image processors to figure out if they can process the photo without having to read all of file and bumming up the reader
+            - Go slices are fast and immutable since you change the reference and not the data
+            - Can ensure that the body is closed
+            - crypto.Sum([]byte) well takes an array of bytes and not an io.reader - this is needed to generate the hash
+            - Easy to code. Pass []byte where needed and wrap into io.Reader where I can
+        Cons:
+            - Technically being io.Reader is better - though we can wrap []byte to reader
+            - Memory - Needs to have 3-12MB of continous RAM space per photo (ow)
+            - Boy do I see the gc having
+            - os.File is a reader/writer
+    2) Use a bufio *Reader to buffer data
+        Pros:
+            - We don't pull all data into ram
+            - Does allow peeking but we need to ensure that photo processor doesn't read to figure out if they can process the photo as it could bung up the *Reader

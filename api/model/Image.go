@@ -17,7 +17,7 @@ type Image interface {
 	GetType() ImageType
 }
 
-type image struct {
+type basicImage struct {
 	data          io.Reader
 	size          uint64
 	height, width uint32
@@ -25,21 +25,21 @@ type image struct {
 }
 
 func NewImage(data io.Reader, size uint64, height, width uint32, iType ImageType) Image {
-	return &image{data: data, size: size, height: height, width: width, imageType: iType}
+	return &basicImage{data: data, size: size, height: height, width: width, imageType: iType}
 }
 
-func (this *image) Read(p []byte) (int, error) {
+func (this *basicImage) Read(p []byte) (int, error) {
 	return this.data.Read(p)
 }
 
-func (this *image) GetSize() uint64 {
+func (this *basicImage) GetSize() uint64 {
 	return this.size
 }
 
-func (this *image) GetDimensions() (uint32, uint32) {
+func (this *basicImage) GetDimensions() (uint32, uint32) {
 	return this.height, this.width
 }
 
-func (this *image) GetType() ImageType {
+func (this *basicImage) GetType() ImageType {
 	return this.imageType
 }

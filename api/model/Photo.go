@@ -4,9 +4,6 @@ import (
 	"time"
 )
 
-//ID of the photo
-type PhotoId string
-
 type Photo interface {
 	GetId() PhotoId
 	GetTimeTaken() time.Time

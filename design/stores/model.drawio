@@ -1,22 +1,19 @@
-<mxfile host="65bd71144e" modified="2020-11-14T13:12:35.509Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" version="13.6.5" etag="u-lp_aPTnitbNpynk8yL">
+<mxfile host="65bd71144e" modified="2020-11-29T13:35:22.604Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" etag="i2fK-8modmoNRR5PmCSD" version="13.6.5">
     <diagram id="IHOOy99_Wt7nUu8o2Wgl" name="Page-1">
-        <mxGraphModel dx="1003" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="861" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Photo&lt;br&gt;----&lt;br&gt;Description&lt;br&gt;Id&lt;br&gt;TimeTaken&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="2" value="Photo&lt;br&gt;----&lt;br&gt;Description&lt;br&gt;Id&lt;br&gt;TimeTaken&lt;br&gt;-People&lt;br&gt;-Location&lt;br&gt;-Album Tags" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="120" y="260" width="120" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="2">
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="2" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="Image&lt;br&gt;----&lt;br&gt;Height&lt;br&gt;Width&lt;br&gt;Size&lt;br&gt;Image Type&lt;br&gt;Data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="410" y="120" width="120" height="120" as="geometry"/>
+                <mxCell id="3" value="Image&lt;br&gt;----&lt;br&gt;Height&lt;br&gt;Width&lt;br&gt;Size&lt;br&gt;Image Type&lt;br&gt;Data&lt;br&gt;Image Format&lt;br&gt;ImageFileHash" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="120" width="120" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="ImageData&lt;br&gt;io.Reader" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="610" y="190" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="2">
+                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="5" target="2" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="340" y="390" as="targetPoint"/>
                         <Array as="points">
@@ -25,10 +22,10 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="5" value="Image&lt;br&gt;----&lt;br&gt;Height&lt;br&gt;Width&lt;br&gt;Size&lt;br&gt;Image Type&lt;br&gt;Data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="410" y="420" width="120" height="120" as="geometry"/>
+                <mxCell id="5" value="Image&lt;br&gt;----&lt;br&gt;Height&lt;br&gt;Width&lt;br&gt;Size&lt;br&gt;Image Type&lt;br&gt;Data&lt;br&gt;Image Format&lt;br&gt;ImageFileHash" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="430" width="120" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="2">
+                <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="6" target="2" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="340" y="330"/>
@@ -36,14 +33,17 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="6" value="Image&lt;br&gt;----&lt;br&gt;Height&lt;br&gt;Width&lt;br&gt;Size&lt;br&gt;Image Type&lt;br&gt;Data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="410" y="270" width="120" height="120" as="geometry"/>
+                <mxCell id="6" value="Image&lt;br&gt;----&lt;br&gt;Height&lt;br&gt;Width&lt;br&gt;Size&lt;br&gt;Image Type&lt;br&gt;Data&lt;br&gt;Image Format&lt;br&gt;ImageFileHash" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="280" width="120" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Having and Image be an io.Reader doesn't make a lot of sense because what if multiple sources need to access it at the same time. It isn't a throwawable entity. Should have a GetIMageData that returns an io.Reader" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="10" value="Having and Image be an io.Reader doesn't make a lot of sense because what if multiple sources need to access it at the same time. It isn't a throwawable entity. Should have a GetIMageData that returns an io.Reader" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="560" y="80" width="250" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="90" y="120" width="170" height="110" as="geometry"/>
+                <mxCell id="11" value="Put hash on image instead of photo?&lt;br&gt;This might make more sense than having the photo store the id as really it is the hash of the image" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="70" width="170" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&amp;nbsp;Tags?&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="140" width="160" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

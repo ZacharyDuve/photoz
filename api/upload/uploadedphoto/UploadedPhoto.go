@@ -4,7 +4,6 @@ import (
 	"errors"
 
 	"github.com/ZacharyDuve/photoz/api/model/photo"
-	"github.com/ZacharyDuve/photoz/api/model/photo/image"
 )
 
 //Status is the current processing status of the photo
@@ -13,7 +12,7 @@ type Status string
 //UploadedPhoto is a photo that was uploaded but hasn't been completely processed yet* (*or could just being migrated to photo store)
 type UploadedPhoto struct {
 	id          photo.ID
-	masterImage image.Image
+	masterImage photo.Image
 	status      Status
 }
 
@@ -24,7 +23,7 @@ const (
 )
 
 //NewUploadedPhoto creates a new UploadedPhoto from the photo.ID, image.Image, and Status that was passed in. All fields are required or error will return and UploadedPhoto will be nil
-func NewUploadedPhoto(id photo.ID, master image.Image, status Status) (*UploadedPhoto, error) {
+func NewUploadedPhoto(id photo.ID, master photo.Image, status Status) (*UploadedPhoto, error) {
 	var err error
 	var uPht *UploadedPhoto
 	if id == photo.ID("") {
@@ -49,7 +48,7 @@ func (uPht *UploadedPhoto) ID() photo.ID {
 }
 
 //Master returns the master image that was uploaded
-func (uPht *UploadedPhoto) Master() image.Image {
+func (uPht *UploadedPhoto) Master() photo.Image {
 	return uPht.masterImage
 }
 

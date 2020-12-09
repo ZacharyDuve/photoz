@@ -1,12 +1,12 @@
 package photostore
 
-import "github.com/ZacharyDuve/photoz/api/model"
+import (
+	"github.com/ZacharyDuve/photoz/api/model/photo"
+)
 
-/*
-	PhotoStore is capable of storing Photo data (the meta data of a photo)
-*/
+//PhotoStore stores data for photo.Photo
 type PhotoStore interface {
-	AddPhoto(model.Photo) error
-	GetPhoto(model.PhotoId) (model.Photo, error)
-	RemovePhoto(model.PhotoId) error
+	AddPhoto(photo.Photo) error
+	GetPhotoByID(photo.ID) (photo.Photo, error)
+	RemovePhoto(photo.ID) error
 }

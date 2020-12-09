@@ -2,8 +2,6 @@ package photo
 
 import (
 	"time"
-
-	"github.com/ZacharyDuve/photoz/api/model/photo/image"
 )
 
 //ID is the UUID of the photo
@@ -16,7 +14,7 @@ type Photo interface {
 	SetTimeTaken(time.Time)
 	Description() string
 	SetDescription(string)
-	Original() image.Image
-	Master() image.Image
-	Thumbnail() image.Image
+	Original() Image
+	Master() Image
+	Thumbnail() Image
 }

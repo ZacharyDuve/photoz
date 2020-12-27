@@ -9,5 +9,5 @@ type ImageStore interface {
 	Add(photo.Image) error
 	Update(photo.Image) error
 	GetByPhotoIDAndImageType(photo.ID, photo.ImageType) (photo.Image, error)
-	Delete(photo.Image)
+	Delete(photo.Image) error
 }

@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/ZacharyDuve/photoz/api/model/photo"
-	testingImage "github.com/ZacharyDuve/photoz/testing/api/model/photo/image"
+	testingImage "github.com/ZacharyDuve/photoz/testing/api/model/photo"
 )
 
 func newUploadedPhotoWithBlankID() (*UploadedPhoto, error) {
